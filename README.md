@@ -31,4 +31,4 @@ Sub-directories of each modules are the various challenges to be completed for t
 
 Comments & concerns
 -----------------------
-Feel free to tweet me [@bhargavCarleton](https://twitter.com/bhargavCarleton). I will respond as soon as possible. Please do note that I am very new to this. I maynot be of much help, refer to google or #node.js community on freenode first. #node.js as well as #angularjs have helped me tremendously. They were (still are) my guides, helping me climb the great mountain that is Node.
+Feel free to tweet me [@bhargavCarleton](https://twitter.com/bhargavCarleton). I will respond as soon as possible. Please do note that I am very new to this. I may not be of much help, refer to google or #node.js community on freenode first. #node.js as well as #angularjs have helped me tremendously. They were (and still are) my guides, helping me climb the great mountain that is Node.
