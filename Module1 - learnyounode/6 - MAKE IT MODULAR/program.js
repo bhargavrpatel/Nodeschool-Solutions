@@ -1,2 +1,11 @@
-var myModule = require('./module.js');
-myModule.shortTest();
+var filter = require('./module');
+var path = process.argv[2];
+var ext = process.argv[3];
+
+filter(path, ext, function (err, files) {
+  if (err) return console.log(err);
+
+  files.forEach(function (file) {
+    console.log(file);
+  });
+});

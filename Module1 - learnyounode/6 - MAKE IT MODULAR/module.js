@@ -1,25 +1,17 @@
 var fs = require('fs');
 
-exports.shortTest = function(arg1, arg2, callback){
-	fs.readdir(arg1, arg2, function(err, list){
-		list.forEach(function(file) {
-			
-		});
-	});
-	console.log("Test complete");
-};
+module.exports = function (path, ext, callback) {
+  var regex = new RegExp("\\." + ext + "$");
+  var fileList = [];
 
-/*
+  fs.readdir(path, function (err, files) {
+    if (err) return callback(err);
 
-fs.readdir(process.argv[2], function(err, list){
-	if(!err) {
-		for(var i = 0; i < list.length; i++) {
-			var listToString = list[i].toString();
-			if(listToString.indexOf(process.argv[3]) > 0) {
-				console.log(listToString);
-			}
-		}
-	}
-});
+    files.forEach(function (file) {
+      if (regex.test(file))
+        fileList.push(file);
+    });
 
-*/
+    return callback(null, fileList);
+  });
+}
