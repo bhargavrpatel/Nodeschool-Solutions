@@ -1,0 +1,8 @@
+this is me
+testing
+various
+newline characters that might\
+be in a 
+given
+doc
+bye!
